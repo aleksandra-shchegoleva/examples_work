@@ -20,7 +20,7 @@ int main()
 		{
 			M14 = a;
 		}
-		else if(a % 7 == 0 && a % 2 != 0 && a > M7)
+		else if (a % 7 == 0 && a % 2 != 0 && a > M7)
 		{
 			M7 = a;
 		}
@@ -53,6 +53,10 @@ int main()
 		FILE1 >> a;
 		if (a % 14 == 0 && a > M14)
 		{
+			if (M14 > M)
+			{
+				M = M14;
+			}
 			M14 = a;
 		}
 		else if (a % 7 == 0 && a % 2 != 0 && a > M7)
